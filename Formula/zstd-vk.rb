@@ -4,7 +4,7 @@ class ZstdVk < Formula
   url "https://github.com/vibekernels/zstd-vk-macos-arm64/archive/refs/tags/v1.6.0.tar.gz"
   sha256 "PLACEHOLDER_SHA256"
   license "BSD-2-Clause"
-  head "https://github.com/vibekernels/zstd-vk-macos-arm64.git", branch: "dev"
+  head "https://github.com/vibekernels/zstd-vk-macos-arm64.git", branch: "main"
 
   # Bottles are built by the zstd-vk-macos-arm64 CI and uploaded to its GitHub releases.
   # Update this block after each release using the bottle block from CI output.
