@@ -19,6 +19,7 @@ class ZstdVk < Formula
     llvm = Formula["llvm"]
     system "make", "-C", "programs", "zstd-release",
            "CC=#{llvm.opt_bin}/clang",
+           "MOREFLAGS=-mcpu=apple-m1",
            "PREFIX=#{prefix}"
 
     bin.install "programs/zstd" => "zstd-vk"
