@@ -1,16 +1,16 @@
 class WhisperkitVkCli < Formula
   desc "On-device speech recognition for Apple Silicon, optimized by vibekernels"
   homepage "https://github.com/vibekernels/whisperkit-vk"
-  url "https://github.com/vibekernels/whisperkit-vk/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "ea4b16e36d36b4a02cdb3340fee1ff3cc911dec114c6dfb64a3850b9cc887ae5"
+  url "https://github.com/vibekernels/whisperkit-vk/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "1579c399020da11a2e898dc44b1bc9f61d95aacff100bb9a8770e035b09dccb2"
   license "MIT"
   head "https://github.com/vibekernels/whisperkit-vk.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/vibekernels/whisperkit-vk/releases/download/v0.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "b0522c3a73600f39f449c28cd99958819bd27c2892d5e227ec02a3c32451138e"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7ecea65b89d28b85824251be4fed5bb121a3de1a802a2b0212e407e1f64929e7"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "075414f9aa89aa4b69cf59ab096597dc6e73093fc4bd32c97fc523e9e16c17e9"
+    root_url "https://github.com/vibekernels/whisperkit-vk/releases/download/v0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "d51f3fe5c3bdcb008fcd1996c6202503798aeae656f68f877fc6b6e812cf41c0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "70016fe163c17632f650b2a9c9c3a16f7f038d6fa0e7b8bc29b0990132458c50"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "a3405972c9c79925f52f4226c26786e0e803d8056cab827774e7510b5ce88e6a"
   end
 
   depends_on xcode: ["15.0", :build]
